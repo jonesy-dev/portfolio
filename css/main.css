@@ -11,7 +11,7 @@ html{
 }
 
 body{
-    background-color: #1a1c1a;
+    background-color: #f2e3df;
 }
 
 #logo{
@@ -22,6 +22,6 @@ body{
 #msg{
     font-family: 'JetBrains Mono', monospace;
     font-size: 2vw;
-    color: #f2f2f2;
+    color: #1a1c1a;
     margin: 2vh;
 }
