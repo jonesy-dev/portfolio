@@ -1,0 +1,32 @@
+#mainWrap {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 5vw repeat(9, 1fr) 5vw;
+  grid-template-rows: 2vh repeat(3, 1fr) 2vh;
+  gap: 2rem;
+
+  #titleMain {
+    grid-area: 2/2/3/11;
+    font-family: "JetBrains Mono", monospace;
+    font-weight: 800;
+    font-size: 6vw;
+    color: #f2f2f2;
+    justify-self: center;
+  }
+
+  #mainImg {
+    grid-area: 3/6/4/7;
+    width: 100%;
+    height: auto;
+    border-radius: 1rem;
+  }
+
+  #msg {
+    grid-area: 4/5/5/8;
+    place-self: center;
+    color: #f2f2f2;
+    font-family: "JetBrains Mono", monospace;
+    font-size: 2vw;
+    text-transform: uppercase;
+  }
+}

@@ -1,27 +1,44 @@
-@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-html{
-    font-size: 62.5%;
+html {
+  font-size: 62.5%;
 }
 
-body{
-    background-color: #f2e3df;
+body {
+  background-color: #f2e3df;
+  background-color: #121212;
 }
 
-#logo{
-    margin-top: 3vh;
-    width: 20vw;
+#mainWrap {
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 5vw repeat(9, 1fr) 5vw;
+  grid-template-rows: 2vh repeat(3, 1fr) 2vh;
+  gap: 2rem;
 }
-
-#msg{
-    font-family: 'JetBrains Mono', monospace;
-    font-size: 2vw;
-    color: #1a1c1a;
-    margin: 2vh;
+#mainWrap #titleMain {
+  grid-area: 2/2/3/11;
+  font-family: "JetBrains Mono", monospace;
+  font-weight: 800;
+  font-size: 6vw;
+  color: #f2f2f2;
+  justify-self: center;
 }
+#mainWrap #mainImg {
+  grid-area: 3/6/4/7;
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+#mainWrap #msg {
+  grid-area: 4/5/5/8;
+  place-self: center;
+  color: #f2f2f2;
+  font-family: "JetBrains Mono", monospace;
+  font-size: 2vw;
+  text-transform: uppercase;
+}/*# sourceMappingURL=main.css.map */
